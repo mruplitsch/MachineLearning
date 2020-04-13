@@ -30,7 +30,7 @@ def load_data(data_set='train-images-idx3-ubyte.gz'):
 
     return data
 
-def load_labels(data_set='train-images-idx1-ubyte.gz'):
+def load_labels(data_set='train-labels-idx1-ubyte.gz'):
     data_set = download_data(data_set)
 
     with gzip.open(data_set, 'rb') as f:
@@ -42,3 +42,4 @@ def load_labels(data_set='train-images-idx1-ubyte.gz'):
             labels[item] = np.fromstring(f.read(1), dtype='uint8')
                 
     return labels
+
