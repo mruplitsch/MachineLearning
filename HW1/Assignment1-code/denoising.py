@@ -23,6 +23,8 @@ def cond_mean(y_list, x):
         denom += c
     enum *= np.e **(z)
     denom *= np.e **(z)
+    if denom == 0:
+        raise Exception();
     return enum/denom
 
 #formular 7
@@ -57,8 +59,8 @@ x = test / 255
 #str(len(y)) = 60000
 #y[0].shape = 28x28 = DxD
 d = 28
-sigma = 0.25
-#sigma = 0.5
+#sigma = 0.25
+sigma = 0.5
 #sigma = 1
 
 #add pixelwise noise to each image
@@ -74,9 +76,12 @@ for idx, image in enumerate(x):
 n = 10000
 m = 100
 n_idces = np.random.choice(x.shape[0], n, replace=False)
-n_list = y[n_idces]   
+n_list = y[n_idces] 
 m_idces = np.random.choice(x.shape[0], m, replace=False)  
 m_list = x[m_idces]   
+used_labels =  labels[m_idces] 
+
+print(used_labels)
 
 res_cm = np.empty(m_list.shape)
 res_map = np.empty(m_list.shape)
@@ -85,7 +90,7 @@ for idx, m in enumerate(m_list):
     res_cm[idx] = cond_mean(n_list, m)
     res_map[idx] = map(n_list, m)
 
-#print res images    
+        #print res images    
 fig = plt.figure(figsize=(d, d))  # width, height in inches
 fig2 = plt.figure(figsize=(d, d))  # width, height in inches
 res_cm = res_cm * 255
@@ -96,6 +101,9 @@ for i in range(len(res_cm)):
 for i in range(len(res_map)):
     sub2 = fig2.add_subplot(10, 10, i + 1)
     sub2.imshow(res_map[i], interpolation='nearest')
+  
+    
+
 
 plt.show()
 
