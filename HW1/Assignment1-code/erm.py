@@ -4,11 +4,11 @@ import matplotlib.pyplot as plt
 
 PI = np.pi
 SIGMA_SQUARED = 0.1
-N = 10
+N = 100
 
 
 def createData():
-    X = [np.random.random() * 2 * PI for i in range(0, 10)]
+    X = [np.random.random() * 2 * PI for i in range(0, N)]
     t = []
     for sample in X:
         t.append(np.sin(sample) + np.random.normal(0, np.sqrt(SIGMA_SQUARED)))
@@ -53,11 +53,11 @@ def plot(weights, X, t, empirical_risk, true_risk):
         plt.show()
     
     # plot empirical risk
-    """plt.bar(np.arange(1, 9, 1), empirical_risk)
+    plt.bar(np.arange(1, 9, 1), empirical_risk)
     plt.title("Empirical Risk over Increasing Model Complexity (N = " + str(N) + ")")
     plt.xlabel("Model Complexity")
     plt.ylabel("Empirical Risk")
-    plt.show()"""
+    plt.show()
 
     # plot true risk
     plt.bar(np.arange(1, 9, 1), true_risk)
