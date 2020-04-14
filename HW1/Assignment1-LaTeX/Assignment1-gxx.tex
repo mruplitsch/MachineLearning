@@ -70,8 +70,11 @@ $ = argmax \frac{p(X = x | Y = y_n) * p(Y = y_n)}{p(X = x)},$\\\\
 where $p(X = x)$ is a constant and can be neglected and $p(Y=y_n) = 1$ because of the uniform distribution. Which brings the following equation:\\\\
 $\hat{y}_{MAX} = argmax p(X = x | Y = y_n)$\\
 
-\subsection{Plot results.}
-Here the plot containing all result images can be seen. (Sorry for the mess, latex is doing what it wants...) \\
+
+\subsection{Plots and discussion.}
+In our experiments we used three different values for $\sigma: 0.25, 0.5, 1$. The smaller the sigma, the smaller the amount of noise added to the testing images. The bigger the sigma, the bigger the amount of added noise. Generally speaking: the more noise an image has, the harder it is for an algorithm to remove the noise.
+
+\subsubsection{Sigma with 0.25}
 \begin{figure}[h]
   \includegraphics[width=\linewidth]{sigma_025_cm.png}
   \caption{Result of CM algo with sigma 0.25.}
@@ -83,7 +86,17 @@ Here the plot containing all result images can be seen. (Sorry for the mess, lat
   \caption{Result of MAP algo with sigma 0.25.}
   \label{fig:map025}
 \end{figure}
+As can be seen in figure \ref{fig:cm025} the CM algorithm did a pretty good job at removing the noise. There are only a few images, where the noise was not removed completely (e.g. the 3 at position x=6,y=5, where the algorithm almost made an 8 out of the 3) The MAP algorithm, however, did an excellent job, as can be seen in figure \ref{fig:map025}.
+\pagebreak
 
+\subsection{Sigma with 0.50}
+\begin{figure}[!h]
+  \includegraphics[width=\linewidth]{sigma_050_sol.png}
+  \caption{Labels.}
+  \label{fig:sol050}
+\end{figure}
+
+The labels for the choosen images can be seen in figure \ref{fig:sol050}.
 \begin{figure}[h]
   \includegraphics[width=\linewidth]{sigma_050_cm.png}
   \caption{Result of CM algo with sigma 0.50.}
@@ -96,9 +109,19 @@ Here the plot containing all result images can be seen. (Sorry for the mess, lat
   \label{fig:map050}
 \end{figure}
 
+As can be seen in figure \ref{fig:map050} for a sigma of 0.5 the MAP algo again did a very good job. All noisy images were correctly assigned. And while the mc algo performed good as well, the results are a bit different, as can be seen in figure \ref{fig:cm050}. The algorithm connected lines which were disconnected in the original image (e.g. the sloppy 8 at position x=6;y=6 or the sloppy 9 at position x=9;x=8) and thickened lines, which were thin (because of the pen pressure) in the origiinal image (e.g. the 5 at position x=3;y=9 or the 8 at position x=3;y=7)
+\pagebreak
+\subsection{Sigma with 1.00}
+\begin{figure}[!h]
+  \includegraphics[width=\linewidth]{sigma_100_sol.png}
+  \caption{Labels.}
+  \label{fig:sol100}
+\end{figure}
+The labels for the choosen images can be seen in figure \ref{fig:sol050}.
+
 \begin{figure}[h]
   \includegraphics[width=\linewidth]{sigma_100_cm.png}
-  \caption{Result of CM algo with sigma 0.50.}
+  \caption{Result of CM algo with sigma 1.}
   \label{fig:cm100}
 \end{figure}
 
@@ -108,12 +131,13 @@ Here the plot containing all result images can be seen. (Sorry for the mess, lat
   \label{fig:map100}
 \end{figure}
 
-\subsection{Discuss results.}
-In our experiments we used three different values for $\sigma: 0.25, 0.5, 1$. The smaller the sigma, the smaller the amount of noise added to the testing images. The bigger the sigma, the bigger the amount of added noise. Generally speaking: the more noise an image has, the harder it is for an algorithm to remove the noise.
+With a larger sigma, the MAP algo did multiple misassignments, as can be seen in figure \ref{fig:map100}, if one compares the images to the ground truth labels. More than 15\% of the images are misassigned, in addition, none of the numbers which were misassigned resemble each other (e.g. 0 instead of 2 at position x=8;y=10)
+The results for the CM algo, which can be seen in figure \ref{fig:cm100} are as worse as we expected for a sigma of 1.0. Most of the images have a lot of noise in it, some even have traces of other numbers mixed in. (e.g. the 3, where the noise resembles a 9 at position x=2;y=3)
 
-\subsubsection{Sigma with 0.25}
-As can be seen in figure \ref{fig:cm025} the CM algorithm did a pretty good job at removing the noise. There are only a few images, where the noise was not removed completely (e.g. the 3 at position x=6,y=5, where the algorithm almost made an 8 out of the 3) The MAP algorithm, however, did an excellent job, as can be seen in figure \ref{fig:map025}.
+Which brings following conclusion: Both algorithms don't work too well with a lot of noise, however, if the noise is small both work pretty well!
+\pagebreak
 
-\subsection{Sigma with 0.50}
+\subsection{Differences between CM and MAP}
 
+The MAP algorithm returns the image with the highest probability - the image the noisy image resembles the most. The CM algorithm however considers all the images which resemble the noisy image (= images with a high probability weight more than images with a low one) and reconstructs the image by taking the mean of all images.
 \end{document}

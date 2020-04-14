@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.11.12)  14 APR 2020 12:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.11.12)  14 APR 2020 13:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -614,71 +614,94 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--72
 
  []
 
-<sigma_025_cm.png, id=55, 1389.7521pt x 712.5822pt>
+[2]
+<sigma_025_cm.png, id=72, 1389.7521pt x 712.5822pt>
 File: sigma_025_cm.png Graphic file (type png)
 <use sigma_025_cm.png>
-Package pdftex.def Info: sigma_025_cm.png  used on input line 76.
+Package pdftex.def Info: sigma_025_cm.png  used on input line 79.
 (pdftex.def)             Requested size: 345.0pt x 176.8947pt.
-[2]
-<sigma_025_map.png, id=66, 1389.7521pt x 712.5822pt>
+<sigma_025_map.png, id=74, 1389.7521pt x 712.5822pt>
 File: sigma_025_map.png Graphic file (type png)
 <use sigma_025_map.png>
-Package pdftex.def Info: sigma_025_map.png  used on input line 82.
+Package pdftex.def Info: sigma_025_map.png  used on input line 85.
 (pdftex.def)             Requested size: 345.0pt x 176.8947pt.
-<sigma_050_cm.png, id=67, 1389.7521pt x 712.5822pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[3 <./sigma_025_cm.png>]
+<sigma_050_sol.png, id=85, 123.516pt x 123.516pt>
+File: sigma_050_sol.png Graphic file (type png)
+<use sigma_050_sol.png>
+Package pdftex.def Info: sigma_050_sol.png  used on input line 94.
+(pdftex.def)             Requested size: 345.0pt x 345.04329pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<sigma_050_cm.png, id=87, 1389.7521pt x 712.5822pt>
 File: sigma_050_cm.png Graphic file (type png)
 <use sigma_050_cm.png>
-Package pdftex.def Info: sigma_050_cm.png  used on input line 88.
+Package pdftex.def Info: sigma_050_cm.png  used on input line 101.
 (pdftex.def)             Requested size: 345.0pt x 176.8947pt.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<sigma_050_map.png, id=68, 1389.7521pt x 712.5822pt>
+<sigma_050_map.png, id=88, 1389.7521pt x 712.5822pt>
 File: sigma_050_map.png Graphic file (type png)
 <use sigma_050_map.png>
-Package pdftex.def Info: sigma_050_map.png  used on input line 94.
+Package pdftex.def Info: sigma_050_map.png  used on input line 107.
 (pdftex.def)             Requested size: 345.0pt x 176.8947pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<sigma_100_cm.png, id=69, 1389.7521pt x 712.5822pt>
+[4 <./sigma_025_map.png>]
+<sigma_100_sol.png, id=99, 125.487pt x 124.173pt>
+File: sigma_100_sol.png Graphic file (type png)
+<use sigma_100_sol.png>
+Package pdftex.def Info: sigma_100_sol.png  used on input line 116.
+(pdftex.def)             Requested size: 345.0pt x 341.43509pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<sigma_100_cm.png, id=101, 1389.7521pt x 712.5822pt>
 File: sigma_100_cm.png Graphic file (type png)
 <use sigma_100_cm.png>
-Package pdftex.def Info: sigma_100_cm.png  used on input line 100.
+Package pdftex.def Info: sigma_100_cm.png  used on input line 123.
 (pdftex.def)             Requested size: 345.0pt x 176.8947pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<sigma_100_map.png, id=70, 1389.7521pt x 712.5822pt>
+<sigma_100_map.png, id=102, 1389.7521pt x 712.5822pt>
 File: sigma_100_map.png Graphic file (type png)
 <use sigma_100_map.png>
-Package pdftex.def Info: sigma_100_map.png  used on input line 106.
+Package pdftex.def Info: sigma_100_map.png  used on input line 129.
 (pdftex.def)             Requested size: 345.0pt x 176.8947pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3 <./sigma_025_cm.png> <./sigma_025_map.png>] [4 <./sigma_050_cm.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 117.
-
-[5 <./sigma_050_map.png> <./sigma_100_cm.png>] [6 <./sigma_100_map.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 117.
+[5 <./sigma_050_sol.PNG>] [6 <./sigma_050_cm.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 143.
+ [7 <./sigma_050_map.png>]
+[8 <./sigma_100_sol.PNG>] [9 <./sigma_100_cm.png> <./sigma_100_map.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 143.
 
 (./Assignment1-gxx.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 117.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 117.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 143.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 143.
 Package rerunfilecheck Info: File `Assignment1-gxx.out' has not changed.
-(rerunfilecheck)             Checksum: 0DD9F57506C94B97D2590815CD61B951;498.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 117.
+(rerunfilecheck)             Checksum: FE63F31B8F5AF0DB49A646E04E0E324F;650.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 143.
  ) 
 Here is how much of TeX's memory you used:
- 15687 strings out of 492639
- 298649 string characters out of 6133087
- 366864 words of memory out of 5000000
- 19301 multiletter control sequences out of 15000+600000
+ 15708 strings out of 492639
+ 298975 string characters out of 6133087
+ 366917 words of memory out of 5000000
+ 19313 multiletter control sequences out of 15000+600000
  7597 words of font info for 27 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,9n,56p,446b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,9n,56p,608b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
 live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2018
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-di
@@ -690,10 +713,10 @@ s/cm/cmr10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12
 xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2018/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on Assignment1-gxx.pdf (6 pages, 647704 bytes).
+Output written on Assignment1-gxx.pdf (9 pages, 664255 bytes).
 PDF statistics:
- 148 PDF objects out of 1000 (max. 8388607)
- 114 compressed objects within 2 object streams
- 23 named destinations out of 1000 (max. 500000)
- 115 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 183 PDF objects out of 1000 (max. 8388607)
+ 142 compressed objects within 2 object streams
+ 30 named destinations out of 1000 (max. 500000)
+ 141 words of extra memory for PDF output out of 10000 (max. 10000000)
 

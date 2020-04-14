@@ -50,8 +50,7 @@ def get_maxn_rn(y_list, x):
        
 train = mnist.load_data("train-images-idx3-ubyte.gz")
 test = mnist.load_data("t10k-images-idx3-ubyte.gz")
-labels = mnist.load_labels()
-
+labels = mnist.load_labels("t10k-labels-idx1-ubyte.gz")
 #normalize each array by dividing by 255
 y = train / 255
 x = test / 255
@@ -60,8 +59,8 @@ x = test / 255
 #y[0].shape = 28x28 = DxD
 d = 28
 #sigma = 0.25
-sigma = 0.5
-#sigma = 1
+#sigma = 0.5
+sigma = 1
 
 #add pixelwise noise to each image
 mean = np.full((d), 0)
@@ -81,7 +80,7 @@ m_idces = np.random.choice(x.shape[0], m, replace=False)
 m_list = x[m_idces]   
 used_labels =  labels[m_idces] 
 
-print(used_labels)
+print(used_labels.reshape(10,10))
 
 res_cm = np.empty(m_list.shape)
 res_map = np.empty(m_list.shape)
