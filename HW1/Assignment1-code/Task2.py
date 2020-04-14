@@ -13,7 +13,7 @@ def gaussian2D(pos, mu, sigma):
 
     return np.exp(-fac / 2) / N
 
-def plotGaussian2D(N, mu, sigma, alpha):
+def plotGaussian2D(N, mu, sigma, alpha, sigma_squared):
     # Our 2-dimensional distribution will be over variables X and Y
     X = np.linspace(-3.5, 3.5, N)
     Y = np.linspace(-3.5, 3.5, N)
@@ -29,7 +29,7 @@ def plotGaussian2D(N, mu, sigma, alpha):
 
     # Create plot
     fig = plt.figure()
-    fig.suptitle("2D Gaussian (alpha = " + str(alpha) + ")")
+    fig.suptitle("Bivariate Gaussian (alpha = " + str(alpha) + ", sigma^2 = " + str(sigma_squared) + ")")
     ax = fig.gca(projection='3d')
     ax.plot_surface(X, Y, Z, rstride=4, cstride=4, linewidth=1, antialiased=True, cmap=cm.viridis)
 
@@ -38,33 +38,36 @@ def plotGaussian2D(N, mu, sigma, alpha):
     ax.set_zticks(np.linspace(0, 0.2, 5))
     ax.view_init(40, -20)
 
+    plt.savefig("Bivariate Gaussian (alpha = " + str(alpha) + ", sigma^2 = " + str(sigma_squared) + ").png")
     plt.show()
 
 
-def plotGaussianMarginals(N, mu, sigma, alpha, variable_counter):
-    print("hi")
+def plotGaussianMarginals(N, mu, sigma, alpha, sigma_squared, variable_counter):
     X = np.linspace(-3.5, 3.5, N)
     Y = np.exp(-0.5 * ((X - mu) / sigma) ** 2) / (sigma * np.sqrt(2 * np.pi))
 
     plt.plot(X, Y, linewidth=2)
     plt.xlabel("X")
     plt.ylabel("Y")
-    plt.title("Gaussian Marginal X" + str(variable_counter) + "(alpha = " + str(alpha) + ")")
+    plt.title("Gaussian Marginal X" + str(variable_counter) + "(alpha = " + str(alpha) + ", sigma^2 = " + str(sigma_squared) + ")")
+    plt.savefig("X" + str(variable_counter) + "(alpha = " + str(alpha) + ", sigma^2 = " + str(sigma_squared) + ").png")
     plt.show()
 
 
 def main():
     # input parameters
     N = 100
-    alpha = 0.5
     mu = np.array([0., 0.])
-    sigma = np.array([[1., alpha], [alpha,  1]])
+    alphas = [0.2, -0.5, 0.8]
+    sigmas = [0.5, 1, 1.5]
 
-    X = np.linspace(-3.5, 3.5, N)
+    for alpha in alphas:
+        for sigma_squared in sigmas:
+            sigma = np.array([[sigma_squared, alpha * sigma_squared], [alpha * sigma_squared,  sigma_squared]])
 
-    plotGaussian2D(N, mu, sigma, alpha)
-    plotGaussianMarginals(N, mu[0], sigma[0][0], alpha, 1)
-    plotGaussianMarginals(N, mu[1], sigma[1][1], alpha, 2)
+            plotGaussian2D(N, mu, sigma, alpha, sigma_squared)
+            plotGaussianMarginals(N, mu[0], sigma[0][0], alpha, sigma_squared, 1)
+            plotGaussianMarginals(N, mu[1], sigma[1][1], alpha, sigma_squared, 2)
 
 
 if __name__ == "__main__":
