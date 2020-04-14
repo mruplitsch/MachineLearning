@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.11.12)  14 APR 2020 13:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.11.12)  14 APR 2020 13:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -22,6 +22,30 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
+(c:/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(c:/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(c:/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(c:/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
 (c:/texlive/2018/texmf-dist/tex/latex/todonotes/todonotes.sty
 Package: todonotes 2015/07/09 .dtx Todonotes source and documentation.
 Package: todonotes 2012/07/25
@@ -34,10 +58,9 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
 (c:/texlive/2018/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (c:/texlive/2018/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks14
-\XKV@tempa@toks=\toks15
-
-(c:/texlive/2018/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@toks=\toks15
+\XKV@tempa@toks=\toks16
+)
 \XKV@depth=\count88
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
@@ -48,10 +71,6 @@ Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
-
-(c:/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
-)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -66,9 +85,9 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 (c:/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (c:/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (c:/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks16
-\pgfutil@tempdima=\dimen103
-\pgfutil@tempdimb=\dimen104
+\pgfutil@everybye=\toks17
+\pgfutil@tempdima=\dimen105
+\pgfutil@tempdimb=\dimen106
 
 (c:/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)
 ) (c:/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
@@ -83,33 +102,16 @@ Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
 Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 
 (c:/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
-(c:/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
-
-(c:/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
-
-(c:/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-(c:/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 99.
-)
-\Gin@req@height=\dimen105
-\Gin@req@width=\dimen106
-)
 (c:/texlive/2018/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
 (c:/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 
 (c:/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks17
-\pgfkeys@temptoks=\toks18
+\pgfkeys@pathtoks=\toks18
+\pgfkeys@temptoks=\toks19
 
 (c:/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks19
+\pgfkeys@tmptoks=\toks20
 ))
 \pgf@x=\dimen107
 \pgf@y=\dimen108
@@ -125,9 +127,9 @@ Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 \c@pgf@countb=\count90
 \c@pgf@countc=\count91
 \c@pgf@countd=\count92
-\t@pgf@toka=\toks20
-\t@pgf@tokb=\toks21
-\t@pgf@tokc=\toks22
+\t@pgf@toka=\toks21
+\t@pgf@tokb=\toks22
+\t@pgf@tokc=\toks23
  (c:/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
@@ -156,9 +158,9 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 \pgfmath@dimen=\dimen115
 \pgfmath@count=\count95
 \pgfmath@box=\box27
-\pgfmath@toks=\toks23
-\pgfmath@stack@operand=\toks24
-\pgfmath@stack@operation=\toks25
+\pgfmath@toks=\toks24
+\pgfmath@stack@operand=\toks25
+\pgfmath@stack@operation=\toks26
 )
 (c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
 (c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
@@ -291,8 +293,8 @@ Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 (c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen142
 \pgffor@skip=\dimen143
-\pgffor@stack=\toks26
-\pgffor@toks=\toks27
+\pgffor@stack=\toks27
+\pgffor@toks=\toks28
 ))
 (c:/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
@@ -469,7 +471,7 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \aftertitleunit=\skip48
 \ttl@plus=\dimen157
 \ttl@minus=\dimen158
-\ttl@toksa=\toks28
+\ttl@toksa=\toks29
 \titlewidth=\dimen159
 \titlewidthlast=\dimen160
 \titlewidthfirst=\dimen161
@@ -477,20 +479,20 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 (./Assignment1-gxx.aux)
 \openout1 = `Assignment1-gxx.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
 
 (c:/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -499,12 +501,12 @@ LaTeX Font Info:    ... okay on input line 11.
 \scratchbox=\box38
 \nofMPsegments=\count123
 \nofMParguments=\count124
-\everyMPshowfont=\toks29
+\everyMPshowfont=\toks30
 \MPscratchCnt=\count125
 \MPscratchDim=\dimen163
 \MPnumerator=\count126
 \makeMPintoPDFobject=\count127
-\everyMPtoPDFconversion=\toks30
+\everyMPtoPDFconversion=\toks31
 ) (c:/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -524,7 +526,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box39
-Package hyperref Info: Link coloring OFF on input line 11.
+Package hyperref Info: Link coloring OFF on input line 12.
 
 (c:/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -534,189 +536,133 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count128
 )
-LaTeX Info: Redefining \ref on input line 11.
-LaTeX Info: Redefining \pageref on input line 11.
-LaTeX Info: Redefining \nameref on input line 11.
+LaTeX Info: Redefining \ref on input line 12.
+LaTeX Info: Redefining \pageref on input line 12.
+LaTeX Info: Redefining \nameref on input line 12.
 
 (./Assignment1-gxx.out) (./Assignment1-gxx.out)
 \@outlinefile=\write4
 \openout4 = `Assignment1-gxx.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 13.
+(Font)              <12> on input line 14.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 13.
+(Font)              <8> on input line 14.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 13.
+(Font)              <6> on input line 14.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 16.
+(Font)              <7> on input line 17.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 16.
+(Font)              <5> on input line 17.
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--37
+Underfull \hbox (badness 10000) in paragraph at lines 35--38
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--37
+Underfull \hbox (badness 10000) in paragraph at lines 35--38
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--45
+Underfull \hbox (badness 10000) in paragraph at lines 39--46
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--45
+Underfull \hbox (badness 10000) in paragraph at lines 39--46
 
  []
 
 [1
 
 {c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 56--62
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--62
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--62
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--62
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 66--72
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 66--72
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 66--72
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 66--72
-
- []
+LaTeX Warning: Reference `plots' on page 2 undefined on input line 63.
 
 [2]
-<sigma_025_cm.png, id=72, 1389.7521pt x 712.5822pt>
+
+LaTeX Warning: Reference `plots' on page 3 undefined on input line 82.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--94
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--94
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--94
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--94
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 98--104
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--104
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--104
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--104
+
+ []
+
+<sigma_025_cm.png, id=44, 1389.7521pt x 712.5822pt>
 File: sigma_025_cm.png Graphic file (type png)
 <use sigma_025_cm.png>
-Package pdftex.def Info: sigma_025_cm.png  used on input line 79.
+Package pdftex.def Info: sigma_025_cm.png  used on input line 111.
 (pdftex.def)             Requested size: 345.0pt x 176.8947pt.
-<sigma_025_map.png, id=74, 1389.7521pt x 712.5822pt>
-File: sigma_025_map.png Graphic file (type png)
-<use sigma_025_map.png>
-Package pdftex.def Info: sigma_025_map.png  used on input line 85.
-(pdftex.def)             Requested size: 345.0pt x 176.8947pt.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3 <./sigma_025_cm.png>]
-<sigma_050_sol.png, id=85, 123.516pt x 123.516pt>
+<sigma_025_map.png, id=46, 1389.7521pt x 712.5822pt>
+File: sigma_025_map.png Graphic file (type png)
+<use sigma_025_map.png>
+Package pdftex.def Info: sigma_025_map.png  used on input line 117.
+(pdftex.def)             Requested size: 345.0pt x 176.8947pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `fig:cm025' on page 4 undefined on input line 121.
+
+
+LaTeX Warning: Reference `fig:map025' on page 4 undefined on input line 121.
+
+[4]
+<sigma_050_sol.png, id=55, 123.516pt x 123.516pt>
 File: sigma_050_sol.png Graphic file (type png)
 <use sigma_050_sol.png>
-Package pdftex.def Info: sigma_050_sol.png  used on input line 94.
+Package pdftex.def Info: sigma_050_sol.png  used on input line 126.
 (pdftex.def)             Requested size: 345.0pt x 345.04329pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<sigma_050_cm.png, id=87, 1389.7521pt x 712.5822pt>
+
+LaTeX Warning: Reference `fig:sol050' on page 5 undefined on input line 131.
+
+<sigma_050_cm.png, id=56, 1389.7521pt x 712.5822pt>
 File: sigma_050_cm.png Graphic file (type png)
 <use sigma_050_cm.png>
-Package pdftex.def Info: sigma_050_cm.png  used on input line 101.
+Package pdftex.def Info: sigma_050_cm.png  used on input line 133.
 (pdftex.def)             Requested size: 345.0pt x 176.8947pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<sigma_050_map.png, id=88, 1389.7521pt x 712.5822pt>
-File: sigma_050_map.png Graphic file (type png)
-<use sigma_050_map.png>
-Package pdftex.def Info: sigma_050_map.png  used on input line 107.
-(pdftex.def)             Requested size: 345.0pt x 176.8947pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[4 <./sigma_025_map.png>]
-<sigma_100_sol.png, id=99, 125.487pt x 124.173pt>
-File: sigma_100_sol.png Graphic file (type png)
-<use sigma_100_sol.png>
-Package pdftex.def Info: sigma_100_sol.png  used on input line 116.
-(pdftex.def)             Requested size: 345.0pt x 341.43509pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<sigma_100_cm.png, id=101, 1389.7521pt x 712.5822pt>
-File: sigma_100_cm.png Graphic file (type png)
-<use sigma_100_cm.png>
-Package pdftex.def Info: sigma_100_cm.png  used on input line 123.
-(pdftex.def)             Requested size: 345.0pt x 176.8947pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<sigma_100_map.png, id=102, 1389.7521pt x 712.5822pt>
-File: sigma_100_map.png Graphic file (type png)
-<use sigma_100_map.png>
-Package pdftex.def Info: sigma_100_map.png  used on input line 129.
-(pdftex.def)             Requested size: 345.0pt x 176.8947pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[5 <./sigma_050_sol.PNG>] [6 <./sigma_050_cm.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 143.
- [7 <./sigma_050_map.png>]
-[8 <./sigma_100_sol.PNG>] [9 <./sigma_100_cm.png> <./sigma_100_map.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 143.
-
-(./Assignment1-gxx.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 143.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 143.
-Package rerunfilecheck Info: File `Assignment1-gxx.out' has not changed.
-(rerunfilecheck)             Checksum: FE63F31B8F5AF0DB49A646E04E0E324F;650.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 143.
- ) 
-Here is how much of TeX's memory you used:
- 15708 strings out of 492639
- 298975 string characters out of 6133087
- 366917 words of memory out of 5000000
- 19313 multiletter control sequences out of 15000+600000
- 7597 words of font info for 27 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 62i,9n,56p,608b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
-live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2018
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2018/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2018/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi7.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12
-.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/te
-xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2018/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on Assignment1-gxx.pdf (9 pages, 664255 bytes).
-PDF statistics:
- 183 PDF objects out of 1000 (max. 8388607)
- 142 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
- 141 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+LaTeX W

@@ -170,6 +170,7 @@ Which brings following conclusion: Both algorithms don't work too well with a lo
 \pagebreak
 
 \subsection{Differences between CM and MAP}
+The MAP algorithm returns the image with the highest probability - the image the noisy image resembles the most. The CM algorithm however considers all the images which resemble the noisy image (= images with a high probability weight more than images with a low one) and reconstructs the image by taking the mean of all images.
 
 \clearpage
 \section{plots}
@@ -236,5 +237,5 @@ Which brings following conclusion: Both algorithms don't work too well with a lo
 \includegraphics[width=\linewidth]{true.png}
 \includegraphics[width=\linewidth]{true_100.png}
 
-The MAP algorithm returns the image with the highest probability - the image the noisy image resembles the most. The CM algorithm however considers all the images which resemble the noisy image (= images with a high probability weight more than images with a low one) and reconstructs the image by taking the mean of all images.
+
 \end{document}
