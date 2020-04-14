@@ -52,6 +52,7 @@ labels = mnist.load_labels()
 
 #normalize each array by dividing by 255
 y = train / 255
+x = test / 255
 
 #str(len(y)) = 60000
 #y[0].shape = 28x28 = DxD
@@ -61,12 +62,11 @@ sigma = 0.25
 #sigma = 1
 
 #add pixelwise noise to each image
-x = np.empty(y.shape)
 mean = np.full((d), 0)
 cov = np.zeros((d,d), float)
 np.fill_diagonal(cov, sigma**2)
 
-for idx, image in enumerate(y):
+for idx, image in enumerate(x):
     noise = multivariate_normal(mean, cov, (d)) #returns noise in shape dxd
     x[idx] = image + noise
 
