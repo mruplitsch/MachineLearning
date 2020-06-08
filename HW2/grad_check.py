@@ -10,12 +10,18 @@ In this case, it is implement for a simple input function
 f(x)=\mathbf{1}^T @ sin(x).
 """
 
+
 def f(x):
+    print(np.ones_like(x).T @ np.sin(x))
     return np.ones_like(x).T @ np.sin(x)
+
 
 def grad_f(x):
     return np.cos(x)
 
+
 x_ = np.random.rand(3)
+print(x_)
+print(np.sin(x_[0]))
 print(grad_f(x_))
-print(approx_fprime(x_,f,1e-6))
+print(approx_fprime(x_, f, 1e-6))
