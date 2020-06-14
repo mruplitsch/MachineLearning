@@ -132,7 +132,7 @@ def supportVector(X, t, w_tilde, k, d):
 
 # creates scatter plot from data
 def plotData(X, t, w_tilde=[]):
-    plt.title("Proximal Sub-gradient Method with " + str(Iterations) + " Iterations")
+    plt.title("Data Set With N = 200")
 
     group_1 = X[np.where(t == 1)[0]]
     group_2 = X[np.where(t == -1)[0]]
@@ -157,6 +157,8 @@ def plotData(X, t, w_tilde=[]):
     ymin = np.min(X[:, 1]) - 1
     xmax = np.max(X[:, 0]) + 1
     ymax = np.max(X[:, 1]) + 1
+    plt.xlabel("x1")
+    plt.ylabel("x2")
     plt.xlim(xmin, xmax)
     plt.ylim(ymin, ymax)
 
@@ -175,22 +177,22 @@ def main():
 
     # Task 2
     result_1 = proximalSubGradientMethod(X_1, t_1)
-    #result_2 = proximalSubGradientMethod(X_2, t_2)
+    result_2 = proximalSubGradientMethod(X_2, t_2)
 
     accuracy_1 = accuracy(X_1, t_1, result_1)
-    #accuracy_2 = accuracy(X_2, t_2, result_2)
+    accuracy_2 = accuracy(X_2, t_2, result_2)
 
     print("Accuracies:")
     print(accuracy_1)
-    #print(accuracy_2)
+    print(accuracy_2)
 
     # plots
     plotData(X_1, t_1)
-    #plotData(X_2, t_2)
+    plotData(X_2, t_2)
 
     # plots with decision boundary
     plotData(X_1, t_1, result_1)
-    #plotData(X_2, t_2, result_2)
+    plotData(X_2, t_2, result_2)
 
 
 
