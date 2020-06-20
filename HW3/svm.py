@@ -35,7 +35,7 @@ def create_simple_dataset():
 # draw data for halfmoon dataset
 def create_halfmoon_dataset():
     N = num_train_points
-    sigma_squarred = 0.2
+    sigma = 0.1
     mu = 0
 
     X_1 = []
@@ -44,8 +44,8 @@ def create_halfmoon_dataset():
     t_2 = []
 
     for i in range(0, int(N / 2)):
-        noise_1 = np.random.normal(mu, sigma_squarred)
-        noise_2 = np.random.normal(mu, sigma_squarred)
+        noise_1 = np.random.normal(mu, sigma)
+        noise_2 = np.random.normal(mu, sigma)
         Phi = np.random.uniform(0, np.pi)
 
         x_1 = np.cos(Phi) + noise_1
@@ -356,25 +356,25 @@ def main():
     #
     
     x_simple, t_simple = create_simple_dataset()
-    #x_halfmoon, t_halfmoon = create_halfmoon_dataset()
+    x_halfmoon, t_halfmoon = create_halfmoon_dataset()
 
     # plots
     plotData(x_simple, t_simple)
-    #plotData(x_halfmoon, t_halfmoon)
+    plotData(x_halfmoon, t_halfmoon)
     
     ###########
     ## TASK 2
     #
     
     result_simple = proximal_subgradient_method(x_simple, t_simple)
-    #result_halfmoon = proximal_subgradient_method(x_halfmoon, t_halfmoon)
-
     calculate_accuracy_1 = calculate_accuracy(x_simple, t_simple, result_simple)
-    #calculate_accuracy_2 = calculate_accuracy(x_halfmoon, t_halfmoon, result_halfmoon)
-
-    # plots with decision boundary
     plotData(x_simple, t_simple, result_simple)
-    #plotData(x_halfmoon, t_halfmoon, result_halfmoon)
+    
+    '''
+    result_halfmoon = proximal_subgradient_method(x_halfmoon, t_halfmoon)
+    calculate_accuracy_2 = calculate_accuracy(x_halfmoon, t_halfmoon, result_halfmoon)
+    plotData(x_halfmoon, t_halfmoon, result_halfmoon)
+    '''
     
     
     ###########
